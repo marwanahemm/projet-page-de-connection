@@ -1,0 +1,327 @@
+:root {
+    --color-primary: #e50914;
+    --color-background: #1a1a1a;
+    --color-black: #000000;
+    --color-dark-gray: #141414;
+    --color-medium-gray: #2d2d2d;
+    --color-light-gray: #cccccc;
+    --color-text-gray: #999999;
+    --color-white: #ffffff;
+    --font-main: Garamond bold;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+.header {
+    background-color: var(--color-black);
+    padding: 20px;
+}
+
+.logo {
+    color: var(--color-primary);
+    display: inline-block;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 9.25rem;
+    height: 2.5rem;
+    font-family: var(--font-main);
+}
+
+.btn-login {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-login:hover {
+    background-color: #c40812;
+}
+
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    background-image: url("/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_large.jpg");
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h2,
+.hero p,
+.email-input,
+.btn-start {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.email-input {
+    padding: 12px;
+    width: 300px;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 4px;
+}
+
+.btn-start {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-start:hover {
+    background-color: #c40812;
+}
+
+.trending {
+    padding: 50px 20px;
+    background-color: var(--color-dark-gray);
+}
+
+.trending h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    color: var(--color-white);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Images spécifiques pour chaque carte */
+.card-image-1 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400') center/cover;
+}
+
+.card-image-2 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400') center/cover;
+}
+
+.card-image-3 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400') center/cover;
+}
+
+.card-image-4 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=400') center/cover;
+}
+
+.card-image-5 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400') center/cover;
+}
+
+.card-image-6 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400') center/cover;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.badge {
+    background-color: var(--color-primary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.rating {
+    font-size: 14px;
+    color: var(--color-light-gray);
+}
+
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    background-color: var(--color-medium-gray);
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.feature-box h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: var(--color-light-gray);
+}
+
+.pricing {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--color-black);
+}
+
+.pricing h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.plan {
+    background-color: var(--color-medium-gray);
+    padding: 30px;
+    margin: 20px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    border-radius: 8px;
+}
+
+.plan h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: var(--color-black);
+    padding: 30px;
+    text-align: center;
+    color: var(--color-text-gray);
+}
+
+.footer a {
+    color: var(--color-text-gray);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .plan {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .email-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .btn-start {
+        margin-left: 0;
+        width: 100%;
+    }
+}
