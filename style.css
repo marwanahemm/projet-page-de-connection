@@ -165,28 +165,33 @@ body {
     background-size: cover;
     background-position: center;
 }
-/* Styles pour le widget de traduction */
+/* Styles widget translate */
 #translator_2907 {
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
+    padding: 15px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-#translator_2907 a {
-    color: #0066cc;
-    text-decoration: none;
-    margin: 0 5px;
+.btn-translate {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#translator_2907 a:hover {
-    text-decoration: underline;
-    color: #0052a3;
+.btn-translate:hover {
+    background-color: #f40612;
 }
-/* Images spécifiques pour chaque carte */
+
+.btn-translate:active {
+    transform: scale(0.98);
+}
+/* Images cards */
 .card-image-1 {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400') center/cover;
 }
@@ -319,7 +324,7 @@ body {
 }
 
 /* Responsive */
-/* Petits smartphones (320px - 480px) */
+/* little smartphones (320px - 480px) */
 @media (max-width: 480px) {
     .content-grid {
         grid-template-columns: 1fr;
