@@ -165,55 +165,66 @@ body {
     background-size: cover;
     background-position: center;
 }
-/* Styles widget translate */
-#translator_2907 {
-    padding: 15px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+
+/* Modification du header pour aligner les éléments */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn-translate {
-    background-color: #e50914;
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Styles pour le sélecteur de langue */
+.language-selector {
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    border: none;
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 12px;
+    font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.btn-translate:hover {
-    background-color: #f40612;
+.language-selector:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: white;
 }
 
-.btn-translate:active {
-    transform: scale(0.98);
+.language-selector:focus {
+    outline: none;
+    border-color: white;
 }
-/* Images cards */
-.card-image-1 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400') center/cover;
+
+.language-selector option {
+    background-color: #141414;
+    color: white;
+    padding: 10px;
 }
 
 .card-image-2 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/INCEPTION.jpg') center/cover;
 }
 
 .card-image-3 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/The%20Crown.jpg') center/cover;
 }
 
 .card-image-4 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=400') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/Interstellar.jpg') center/cover;
 }
 
 .card-image-5 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/Breaking%20Bad.jpg') center/cover;
 }
 
 .card-image-6 {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/The%20Dark%20Knight.jpg') center/cover;
 }
 
 .card-title {
