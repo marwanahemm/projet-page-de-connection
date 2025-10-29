@@ -299,25 +299,29 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* Petits smartphones (320px - 480px) */
+@media (max-width: 480px) {
     .content-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
     }
     
     .card-image {
-        height: 250px;
+        height: 200px;
     }
     
     .plan {
         display: block;
-        width: 80%;
-        margin: 20px auto;
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
     }
     
     .email-input {
         width: 100%;
         margin-bottom: 10px;
+        font-size: 16px; /* Évite le zoom automatique sur iOS */
     }
     
     .btn-start {
