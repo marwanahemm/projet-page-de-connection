@@ -207,6 +207,10 @@ body {
     padding: 10px;
 }
 
+.card-image-1 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/Stranger_Things_Logo.jpg') center/cover;
+}
+
 .card-image-2 {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('file:///C:/Users/mahem/Documents/projet-page-de-connection/INCEPTION.jpg') center/cover;
 }
@@ -363,5 +367,50 @@ body {
     .btn-start {
         margin-left: 0;
         width: 100%;
+    }
+}
+/* Smartphones moyens (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+    }
+    
+    .card-image {
+        height: 220px;
+    }
+    
+    .plan {
+        display: block;
+        width: 85%;
+        margin: 20px auto;
+    }
+    
+    .email-input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .btn-start {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Tablettes (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .plan {
+        width: 70%;
+        margin: 20px auto;
     }
 }
