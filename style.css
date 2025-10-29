@@ -165,7 +165,27 @@ body {
     background-size: cover;
     background-position: center;
 }
+/* Styles pour le widget de traduction */
+#translator_2907 {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+#translator_2907 a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#translator_2907 a:hover {
+    text-decoration: underline;
+    color: #0052a3;
+}
 /* Images spécifiques pour chaque carte */
 .card-image-1 {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400') center/cover;
